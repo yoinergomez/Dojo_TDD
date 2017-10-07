@@ -35,6 +35,11 @@ describe('Codebreaker Test', function(){
       test.equal('XX', resultado)
     })
 
+    it('Return empty',function(){
+      let resultado = codebreaker.adivinar("5678")
+      test.equal('', resultado)
+    })
+
     it('1 hit',function(){
       let resultado = codebreaker.adivinar("1567")
       test.equal('X', resultado)
