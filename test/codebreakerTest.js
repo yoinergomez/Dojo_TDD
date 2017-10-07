@@ -75,5 +75,10 @@ describe('Codebreaker Test', function(){
       test.equal('error', resultado)
     })
 
+    it('is number expo',function(){
+      let resultado = codebreaker.adivinar("1e34")
+      test.equal('error', resultado)
+    })
+
 
 })

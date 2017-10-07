@@ -3,10 +3,10 @@ var trueNumber = '1234';
 class Codebreaker{
   adivinar(numero){
 
-    if(isNaN(numero) || numero.length != 4){
+    if(isNaN(numero) || numero.length != 4 || (numero.split('')).indexOf('e')!=-1){
       return "error"
     }
-    
+
     let resultadoX = ''
     let resultado_ = ''
     let arrayNumber = []
