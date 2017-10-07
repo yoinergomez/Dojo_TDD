@@ -1,0 +1,11 @@
+{
+  "name": "dojo_tdd",
+  "version": "1.0.0",
+  "description": "Dojo de pruebas",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC"
+}
