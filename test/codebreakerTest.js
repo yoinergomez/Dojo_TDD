@@ -10,6 +10,11 @@ describe( 'Test pass', function(){
 })
 
 describe('Codebreaker Test', function(){
+
+    beforeEach(function() {
+        codebreaker.setNumber('1234')
+    })
+
     it('Assert all number - XXXX', function(){
         let resultado = codebreaker.adivinar("1234")
         test.equal('XXXX', resultado)
@@ -79,6 +84,13 @@ describe('Codebreaker Test', function(){
       let resultado = codebreaker.adivinar("1e34")
       test.equal('error', resultado)
     })
+
+    it('set secret number',function(){
+      let resultado = codebreaker.setNumber("2206")
+      test.equal('2206', resultado)
+    })
+
+
 
 
 })

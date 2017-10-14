@@ -1,4 +1,4 @@
-var trueNumber = '1234';
+var trueNumber = '';
 
 class Codebreaker{
   adivinar(numero){
@@ -29,7 +29,10 @@ class Codebreaker{
     return resultadoX + resultado_;
 }
 
-
+  setNumber(numero) {
+    trueNumber = numero;
+    return trueNumber;
+  }
 
 }
 
