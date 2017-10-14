@@ -90,6 +90,12 @@ describe('Codebreaker Test', function(){
       test.equal('2206', resultado)
     })
 
+    it('number is not found',function(){
+      codebreaker.setNumber("")
+      let resultado = codebreaker.adivinar("1e34")
+      test.equal("Number isn't defined ._.!", resultado);
+    })
+
 
 
 

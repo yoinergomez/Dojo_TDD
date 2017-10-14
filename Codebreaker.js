@@ -3,6 +3,10 @@ var trueNumber = '';
 class Codebreaker{
   adivinar(numero){
 
+    if (trueNumber === '') {
+      return "Number isn't defined ._.!"
+    }
+
     if(isNaN(numero) || numero.length != 4 || (numero.split('')).indexOf('e')!=-1){
       return "error"
     }
